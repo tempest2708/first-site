@@ -219,25 +219,8 @@ section {
 	
 
 /* Media */
-
-@media (max-width: 991px) {
-	.phone-block {
-		text-align: center;
-	}
-	
-	.main {
-		
-		h1 {
-			font-size: 3rem;
-		}
-		
-	}
-
-	
-}
-
 @media (max-width: 1200px) {
-	.main {
+
 		
 		h1 {
 			font-size: 3.9rem;
@@ -254,8 +237,121 @@ section {
 		&-trigger {
 			font-size: 2rem;
 		}
+}
+
+
+@media (max-width: 991px) {
+	.main {
+		background-position: top right;
+
+		&-content {
+			text-align: center;
+		}
+		
+		h1 {
+			font-size: 3rem;
+		}
+
+	}
+
+	.phone-block {
+		text-align: center;
+	}
+	
+	
+	.ps {
+		margin-right: 3rem;
+		display: inline-block;
+		color: @light;
+	}
+
+		
+
+}
+
+@media (max-width: 767px) {
+	.main {
+		background-position: top left;
+	}
+		
+	
+	.header {
+		text-align: center;
+	}
+	
+	.button {
+		&-block {
+			text-align: center;
+		}
 	}
 
 
+	.phone-block {
+		margin: 3rem 0;
+	}
+
+	.ps {
+		color: @text;
+	}
 
 }
+
+		
+@media (max-width: 575px) {
+	.main {
+
+		&-content {
+			text-align: center;
+			h1 {
+				font-size: 2rem;
+				margin-top: -5rem;
+			}
+		}
+		
+
+
+	}
+		
+	.ps {
+		font-size: 0.5rem;
+		display: inline;
+		
+	
+	}	
+
+}	
+
+@media (max-width: 412px) {
+	.main {
+		&-form {
+			&-btn {
+				font-size: 1.2rem;
+				height: 5rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 373px) {
+	.main {
+		
+		&-sub {
+			font-size: 2.2rem;
+		}
+
+		&-form {
+			&-btn {
+				font-size: 0.9rem;
+				height: 5rem;
+			}
+		}
+	}
+}
+
+
+
+	
+
+
+
+
