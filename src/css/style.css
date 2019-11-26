@@ -226,6 +226,9 @@ section {
   .ps {
     color: #1a1820;
   }
+  .features h2 {
+    font-size: 2.6rem;
+  }
 }
 @media (max-width: 575px) {
   .main-content {
