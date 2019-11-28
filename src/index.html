@@ -139,9 +139,10 @@
 			
 
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 
 		<!-- Skick slider -->
+			
 			<link rel="stylesheet" href="slick/slick.css">
 			<link rel="stylesheet" href="slick/slick-theme.css">
 			<script src="slick/slick.min.js"></script>
@@ -159,14 +160,20 @@
 					      breakpoint: 991,
 					      settings: {
 					        slidesToShow: 2,
-					        slidesToScroll: 2
-					      }
+					        slidesToScroll: 2,
+					        prevArrow: '<button class="prev arrow"></button>',
+					        nextArrow: '<button class="next arrow"></button>'
+					    }
+					      
+
 					    },
 					    {
 					      breakpoint: 767,
 					      settings: {
 					       slidesToShow: 1,
-					       slidesToScroll: 1
+					       slidesToScroll: 1,
+					       prevArrow: '<button class="prev arrow"></button>',
+					       nextArrow: '<button class="next arrow"></button>'
 					      }
 					    }
 					    

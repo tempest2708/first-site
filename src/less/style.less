@@ -221,8 +221,32 @@ section {
 	
 	.slick-active {
 		outline: none;
-		
 	}
+	
+	.arrow {
+		top: 50%;
+		transform: translateY(-50%);
+		position: absolute;
+		z-index: 99;
+		width: 2rem;
+		height: 2rem;
+		border: none;
+	}
+
+	.prev {
+		left: 0;
+		margin-left: 3rem;
+		background: url(../img/features/left-arrow.png) center no-repeat;
+		background-size: 70%;
+	}
+
+	.next {
+		right: 0;
+		margin-right: 3rem;
+		background: url(../img/features/right-arrow.png) center no-repeat;
+		background-size: 70%;
+	}
+
 
 	.features {
 		&-block {
