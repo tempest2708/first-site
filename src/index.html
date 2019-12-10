@@ -168,7 +168,7 @@
 									<img src="img/price/2.jpg" alt="Штукатурка под шпаклёвку">
 									<span class="price-tag">от 530 руб м<sup>2</sup></span>
 									<ul>
-										<li>Завоз материала и его подъем</li>
+										<li>Завоз  и его подъем</li>
 										<li>Проведение работ</li>
 										<li>Уборка</li>
 										<li>Гарантия 2 года</li>
@@ -196,6 +196,95 @@
 						</div>
 					</div>
 				</section>
+				
+				<section class="feedback">
+					<div class="container">
+						<div class="section-header">
+							<h2>Отзывы</h2>
+							<div class="feedback-slider">
+								<div class="feedback-slider-item">
+									<div class="row">
+										<div class="col-6">
+											<div class="fotorama" data-nav="thumbs">
+												<img src="img/feedback/photo/1.jpg" alt="">
+												<img src="img/feedback/photo/2.jpg" alt="">
+												<img src="img/feedback/photo/3.jpg" alt="">
+												<img src="img/feedback/photo/4.jpg" alt="">
+												<img src="img/feedback/photo/5.jpg" alt="">
+												<img src="img/feedback/photo/6.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-6 information">
+											<p>Объект: <strong>г.Москва, Нахимовский проспект д.10</strong></p>
+											<p>Площадь: <strong>357 м<sup>2</sup></strong></p>
+											<p>Выполнен за: <strong>10 дней</strong></p>
+											<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+											<p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+										</div>
+									</div>
+								</div>
+								<div class="feedback-slider-item">
+									<div class="row">
+										<div class="col-6">
+											<div class="fotorama" data-nav="thumbs">
+												<img src="img/feedback/photo/1.jpg" alt="">
+												<img src="img/feedback/photo/2.jpg" alt="">
+												<img src="img/feedback/photo/3.jpg" alt="">
+												<img src="img/feedback/photo/4.jpg" alt="">
+												<img src="img/feedback/photo/5.jpg" alt="">
+												<img src="img/feedback/photo/6.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-6 information">
+											<p>Объект: <strong>г.Москва, Нахимовский проспект д.10</strong></p>
+											<p>Площадь: <strong>357 м<sup>2</sup></strong></p>
+											<p>Выполнен за: <strong>10 дней</strong></p>
+											<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+											<p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+										</div>
+									</div>
+								</div>
+								<div class="feedback-slider-item">
+									<div class="row">
+										<div class="col-6">
+											<div class="fotorama" data-nav="thumbs">
+												<img src="img/feedback/photo/1.jpg" alt="">
+												<img src="img/feedback/photo/2.jpg" alt="">
+												<img src="img/feedback/photo/3.jpg" alt="">
+												<img src="img/feedback/photo/4.jpg" alt="">
+												<img src="img/feedback/photo/5.jpg" alt="">
+												<img src="img/feedback/photo/6.jpg" alt="">
+											</div>
+
+										</div>
+										<div class="col-6 information">
+											<p>Объект: <strong>г.Москва, Нахимовский проспект д.10</strong></p>
+											<p>Площадь: <strong>357 м<sup>2</sup></strong></p>
+											<p>Выполнен за: <strong>10 дней</strong></p>
+											<p>Стоимость: <strong>550 рублей за квадратный метр</strong></p>
+											<p>Особенности: <strong>перепады неровности стен достигали до 6 см</strong></p>
+											<div class="media">
+											  <img class="mr-3" src="img/feedback/avatar.png">
+											  <div class="media-body comment">
+											  	<span>Заказчик</span>
+											    <h5><strong>Нахимов Артем</strong></h5>
+											   <div class="blockquote">
+											     <div class="quote">
+											     	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+											     	</p>
+											     	
+											   </div>
+											   
+											  </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
 			</div>
 			
 
@@ -240,6 +329,11 @@
 		<link rel="stylesheet" href="slick/slick.css">	
 		<link rel="stylesheet" href="slick/slick-theme.scss">
 		<script src="slick/slick.min.js"></script>
+
+		<!-- Fotorama -->
+		<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+		
 		<script>
 			$(document).ready(function(){
 				 $('.popup-btn').on('click', function(event) {
@@ -249,6 +343,12 @@
 				 $('.popup-close').on('click', function(event) {
 				 	$('.popup').fadeOut();
 				 });
+
+				 $('.feedback-slider').slick({
+				 		prevArrow:'<button class="feedback-slider-btn feedback-prev"><img src="img/feedback/prevArrow.svg" alt="prev" /></button>',
+				 		nextArrow:'<button class="feedback-slider-btn feedback-next"><img src="img/feedback/nextArrow.svg" alt="next" /></button>'
+				 });
+
 
 				  $('.features-slider').slick({
 				  	infinite: true,

@@ -303,6 +303,65 @@ section {
   background-size: 100%;
   margin-right: 1rem;
 }
+/* Feedback */
+.feedback {
+  background: url(../img/feedback/feedback-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.feedback .information p {
+  font-size: 1.6rem;
+}
+.feedback h2 {
+  font-size: 3.6rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  text-align: center;
+  margin: 5rem 0;
+}
+.feedback-prev {
+  left: -2rem;
+}
+.feedback-next {
+  right: -6rem;
+}
+.feedback-slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background-color: #70c849;
+  width: 4rem;
+  height: 5rem;
+  background-size: 100%;
+}
+.feedback-slider-btn img {
+  width: 40%;
+  height: 60%;
+}
+.feedback-slider-item {
+  background-color: #ffffff;
+  padding: 5rem;
+  box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.1);
+}
+.feedback-slider-item .media {
+  margin-top: 2rem;
+}
+
+.feedback-slider-item .information p {
+  font-size: 1.6rem;
+}
+.feedback-slider-item .comment h5 {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+.feedback-slider-item .comment span {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+.feedback-slider-item .comment p {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  padding: 1rem 2rem;
+}
 /* Media */
 @media (max-width: 1200px) {
   h1 {
@@ -377,6 +436,10 @@ section {
   .features h2 {
     font-size: 2.6rem;
   }
+  .popup-close {
+    position: absolute;
+    transform: translateX(-1rem);
+  }
 }
 @media (max-width: 575px) {
   .main-content {
@@ -392,7 +455,7 @@ section {
   }
   .popup-close {
     position: absolute;
-    transform: translateX(-200%);
+    transform: translateX(-8rem);
   }
 }
 @media (max-width: 412px) {
