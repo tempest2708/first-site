@@ -169,7 +169,7 @@ section {
 .features h2 {
   font-size: 3.6rem;
   font-family: 'ProximaNova_bold', sans-serif;
-  margin: 10rem 0;
+  margin-bottom: 10rem;
 }
 .features h3 {
   font-size: 2rem;
@@ -198,13 +198,11 @@ section {
 }
 .prev {
   left: 0;
-  margin-left: 3rem;
   background: url(../img/features/left_arrow.png) center no-repeat;
   background-size: 70%;
 }
 .next {
   right: 0;
-  margin-right: 3rem;
   background: url(../img/features/right_arrow.png) center no-repeat;
   background-size: 70%;
 }
@@ -250,6 +248,7 @@ section {
   background: #70c849 url(../img/price/prices-bg.jpg) center;
   background-size: cover;
   text-align: center;
+  height: 100vh;
 }
 .price .section-header-light {
   color: #ffffff;
@@ -382,7 +381,7 @@ section {
   z-index: 99;
   bottom: 0;
   right: 90%;
-  top: 50%;
+  top: 57%;
   width: 35rem;
 }
 .blockquote {
@@ -422,6 +421,45 @@ section {
   top: -3rem;
   border: 1.8rem solid;
   border-color: transparent transparent #fff #fff;
+}
+/* Scheme of work */
+.scheme {
+  text-align: center;
+  background: url(../img/scheme/scheme.jpg) 50% no-repeat;
+  background-position: bottom -10rem right -1rem;
+  height: 100vh;
+}
+.scheme-header h2 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3.6rem;
+}
+.scheme-header p {
+  font-size: 1.6rem;
+  margin: 5rem 0;
+  line-height: 1.8rem;
+}
+.scheme-block {
+  min-height: 30rem;
+  text-align: left;
+}
+.scheme-block h3 {
+  font-size: 2.2rem;
+  line-height: 1.8rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin: 2rem 0;
+}
+.scheme-block p {
+  font-size: 1.7rem;
+  line-height: 1.8rem;
+}
+.scheme-block img {
+  margin-bottom: 2rem;
+}
+.scheme-two img {
+  margin-bottom: 3.3rem;
+}
+.scheme-four img {
+  margin-bottom: 2.7rem;
 }
 /* Media */
 @media (max-width: 1200px) {
@@ -608,11 +646,15 @@ section {
 }
 @media (max-width: 447px) {
   .feedback label {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .feedback .name-label {
     position: absolute;
-    transform: translate(-50%, 140%);
+    transform: translate(-50%, 115%);
+  }
+  .feedback .phone-label {
+    position: absolute;
+    transform: translate(-50%, 115%);
   }
 }
 @media (max-width: 412px) {
@@ -638,9 +680,6 @@ section {
   }
   .feedback .media span {
     margin-left: -12%;
-  }
-  .feedback .phone-label {
-    width: 60%;
   }
 }
 @media (max-width: 393px) {

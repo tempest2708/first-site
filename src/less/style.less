@@ -60,6 +60,7 @@ button, a, input, textarea {
 
 section {
 	padding: 10rem 0;
+
 }
 
 /* main */
@@ -238,7 +239,7 @@ section {
 	h2 {
 		font-size: 3.6rem;
 		.bold();
-		margin: 10rem 0;
+		margin-bottom: 10rem;
 	}
 
 	h3 {
@@ -278,14 +279,12 @@ section {
 
 .prev {
 	left: 0;
-	margin-left: 3rem;
 	background: url(../img/features/left_arrow.png) center no-repeat;
 	background-size: 70%;
 }
 
 .next {
 	right: 0;
-	margin-right: 3rem;
 	background: url(../img/features/right_arrow.png) center no-repeat;
 	background-size: 70%;
 }
@@ -341,6 +340,7 @@ section {
 	background: @icons-color url(../img/price/prices-bg.jpg) center;
 	background-size: cover;
 	text-align: center;
+	height: 100vh;
 
 	.section-header-light {
 		color: @light;
@@ -510,7 +510,7 @@ section {
 			z-index:99;
 			bottom: 0;
 			right: 90%;
-			top: 50%;
+			top: 57%;
 			width: 35rem;
 
 		}
@@ -563,6 +563,67 @@ section {
 			  border-color: transparent transparent #fff #fff;
 		}
 	}
+
+
+
+/* Scheme of work */
+
+.scheme {
+	text-align: center;
+	background: url(../img/scheme/scheme.jpg) 50% no-repeat;
+	background-position: bottom -10rem right -1rem;
+	height: 100vh;
+
+	&-header {
+		h2 {
+			.bold();
+			font-size: 3.6rem;
+		}
+			
+
+		p {
+			font-size: 1.6rem;
+			margin: 5rem 0;
+			line-height: 1.8rem;
+		}	
+	
+	}
+	
+	&-block {
+		min-height: 30rem;
+		text-align: left;
+
+			h3 {
+				font-size: 2.2rem;
+				line-height: 1.8rem;
+				.bold();
+				margin: 2rem 0;
+			}
+			
+			p {
+				font-size: 1.7rem;
+				line-height: 1.8rem;
+			}
+
+			img {
+				margin-bottom: 2rem;
+			}
+	}
+
+	&-two {
+		img {
+			margin-bottom: 3.3rem;
+		}
+	}
+	
+	&-four {
+		img {
+			margin-bottom: 2.7rem;
+		}
+	}
+
+
+}	
 
 
 /* Media */
@@ -873,12 +934,17 @@ section {
 	.feedback {
 		
 		label {
-			font-size: 1rem;
+			font-size: 1.2rem;
 		}
 		.name-label {
 			
 			position: absolute;
-			transform: translate(-50%,140%);
+			transform: translate(-50%,115%);
+		}
+	
+		.phone-label {
+			position: absolute;
+			transform: translate(-50%,115%);
 		}
 	}
 	
@@ -927,12 +993,10 @@ section {
 				margin-left: -12%;
 			}
 		}
-
-		.phone-label {
-			width :60%;
-		}
 	}
 }
+
+		
 		
 @media (max-width: 393px) {
 	.request {
