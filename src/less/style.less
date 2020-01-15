@@ -160,7 +160,7 @@ section {
 			font-size: 1.6rem;
 			margin-bottom: 1.5rem;
 			box-shadow: 4px 7px 13px 0px rgba(0,0,0,0.03);
-			width: 27rem;
+			width: 25rem;
 			margin: auto;
 		}
 			
@@ -782,10 +782,98 @@ section {
 
 	.girl {
 		position: absolute;
-		top: -2rem;
+		top: 0;
 		left: 0;
-		transform: translateX(120%);
+		transform: translateX(145%);
 		z-index: 99;
+		width: 60%;
+	}
+}
+
+
+.materials {
+	text-align: center;
+	background: #fff url(../img/materials/materials-bg.jpg) 0 0 no-repeat;
+
+	&-header {
+		h2 {
+			font-size: 3.6rem;
+			.bold();
+			margin: 8rem 0 5rem 0;
+		}
+
+		p {
+			font-size: 1.9rem;
+			line-height: 1.8rem;
+			margin-bottom: 5rem;
+		}
+	}
+
+	&-img {
+		
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	&-block {
+	
+		margin-bottom: 5rem;
+
+		h3 {
+			font-size: 2.2rem;
+			margin-top: 1rem;
+		}
+
+		p {
+			font-size: 1.9rem;
+			margin: 2rem 0;
+		}
+
+	}
+	
+	.one {
+		p {
+			margin-bottom: 3.8rem;
+		}
+	}
+
+	 a {
+	 	color: @icons-color;
+	 	font-size: 1.5rem;
+	 }
+
+	 &-offset {
+	 	font-size: 2rem;
+	 	a {
+	 		font-size: 2rem;
+	 	}
+	 }
+}
+		
+/* Demonstration */
+
+.demonstration {
+	margin-top: -2rem;
+	margin-bottom: 5rem;
+	background: #fff url(../img/demonstration/demonstration-bg.jpg) center top -2rem no-repeat;
+	
+	h1 {
+		font-size: 4rem;
+		line-height: 5.8rem;
+		.bold();
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: 2.3rem;
+	}
+
+	button {
+		font-size: 1.4rem;
+		padding: 2rem;
 	}
 }
 
@@ -874,10 +962,10 @@ section {
 			}
 		}
 		.girl {
-			width: 60%;
+			width: 70%;
 			position: absolute;
-			top: 11rem;
-			left: 4rem;
+			top: 4rem;
+			left: -10rem;
 		}
 
 		&-bad {
@@ -886,6 +974,21 @@ section {
 					margin-bottom: 3rem;
 				}
 			}
+		}
+	}
+
+	.demonstration {
+		h2 {
+			font-size: 1.4rem;
+		}
+
+		button {
+			width: 100%;
+			font-size: 1.6rem;
+		}
+		
+		small {
+			font-size: 1.1rem;
 		}
 	}
 }
@@ -998,7 +1101,7 @@ section {
 	.problems {
 		.girl {
 			width: 30%;
-			transform: translate(-50%,130%);
+			transform: translate(-20%,143%);
 		}
 		
 		&-list {
@@ -1007,6 +1110,24 @@ section {
 			margin-bottom: 3rem;
 		}
 	}
+
+	.materials {
+
+		&-header {
+			p {
+				line-height: 5rem;
+			}
+		}
+		&-offset  {
+			font-size: 1.7rem;
+		}
+	}
+
+	.demonstration {
+		background-position: left  top ;
+		
+	}
+
 
 }
 
@@ -1094,6 +1215,13 @@ section {
 			height: 31rem;
 		}
 	}
+
+	.materials {
+
+		&-offset  {
+			font-size: 2.5rem;
+		}
+	}
 }
 
 @media (max-width: 600px) {
@@ -1108,6 +1236,12 @@ section {
 			margin-top: -10rem;
 		}
 
+	}
+
+	.materials {
+		&-offset {
+			font-size: 1.7rem;
+		}
 	}
 }
 
@@ -1148,6 +1282,12 @@ section {
 	.ps {
 		margin-left: -30rem;
 	}
+
+	.materials {
+		&-offset {
+			font-size: 1.5rem;
+		}
+	}
 }
 
 @media (max-width: 529px) {
@@ -1183,6 +1323,14 @@ section {
 			}
 		}
 	}
+
+	.materials {
+		&-header {
+			p {
+				font-size: 1.7rem;
+			} 
+		}
+	}
 }
 
 @media (max-width: 477px) {
@@ -1213,6 +1361,14 @@ section {
 			p {
 				font-size: 1.4rem;
 			}
+		}
+	}
+
+	.materials {
+		&-header {
+			p {
+				font-size: 1.5rem;
+			} 
 		}
 	}
 }
@@ -1255,6 +1411,7 @@ section {
 			height: 40rem;
 		}
 	}
+
 }
 
 
@@ -1329,7 +1486,20 @@ section {
 @media (max-width: 393px) {
 	.request {
 		margin-left: -0.6rem;
-		
+	}
+
+	.materials {
+		&-offset {
+			font-size: 1.3rem;
+		}
+	}
+
+	.materials {
+		&-header {
+			p {
+				font-size: 1.4rem;
+			} 
+		}
 	}
 }
 

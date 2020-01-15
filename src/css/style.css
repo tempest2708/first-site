@@ -116,7 +116,7 @@ section {
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
   box-shadow: 4px 7px 13px 0px rgba(0, 0, 0, 0.03);
-  width: 27rem;
+  width: 25rem;
   margin: auto;
 }
 .main-form small {
@@ -573,10 +573,72 @@ section {
 }
 .problems .girl {
   position: absolute;
-  top: -2rem;
+  top: 0;
   left: 0;
-  transform: translateX(120%);
+  transform: translateX(145%);
   z-index: 99;
+  width: 60%;
+}
+.materials {
+  text-align: center;
+  background: #ffffff url(../img/materials/materials-bg.jpg) 0 0 no-repeat;
+}
+.materials-header h2 {
+  font-size: 3.6rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin: 8rem 0 5rem 0;
+}
+.materials-header p {
+  font-size: 1.9rem;
+  line-height: 1.8rem;
+  margin-bottom: 5rem;
+}
+.materials-img img {
+  display: block;
+  margin: 0 auto;
+}
+.materials-block {
+  margin-bottom: 5rem;
+}
+.materials-block h3 {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+.materials-block p {
+  font-size: 1.9rem;
+  margin: 2rem 0;
+}
+.materials .one p {
+  margin-bottom: 3.8rem;
+}
+.materials a {
+  color: #70c849;
+  font-size: 1.5rem;
+}
+.materials-offset {
+  font-size: 2rem;
+}
+.materials-offset a {
+  font-size: 2rem;
+}
+/* Demonstration */
+.demonstration {
+  margin-top: -2rem;
+  margin-bottom: 5rem;
+  background: #ffffff url(../img/demonstration/demonstration-bg.jpg) center top -2rem no-repeat;
+}
+.demonstration h1 {
+  font-size: 4rem;
+  line-height: 5.8rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  text-transform: uppercase;
+}
+.demonstration p {
+  font-size: 2.3rem;
+}
+.demonstration button {
+  font-size: 1.4rem;
+  padding: 2rem;
 }
 /* Media */
 @media (max-width: 1200px) {
@@ -633,13 +695,23 @@ section {
     font-size: 1.4rem;
   }
   .problems .girl {
-    width: 60%;
+    width: 70%;
     position: absolute;
-    top: 11rem;
-    left: 4rem;
+    top: 4rem;
+    left: -10rem;
   }
   .problems-bad ul li {
     margin-bottom: 3rem;
+  }
+  .demonstration h2 {
+    font-size: 1.4rem;
+  }
+  .demonstration button {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+  .demonstration small {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 1010px) {
@@ -713,12 +785,21 @@ section {
   }
   .problems .girl {
     width: 30%;
-    transform: translate(-50%, 130%);
+    transform: translate(-20%, 143%);
   }
   .problems-list {
     width: 70%;
     margin: 0 auto;
     margin-bottom: 3rem;
+  }
+  .materials-header p {
+    line-height: 5rem;
+  }
+  .materials-offset {
+    font-size: 1.7rem;
+  }
+  .demonstration {
+    background-position: left  top ;
   }
 }
 @media (max-width: 767px) {
@@ -771,6 +852,9 @@ section {
     margin-bottom: 3rem;
     height: 31rem;
   }
+  .materials-offset {
+    font-size: 2.5rem;
+  }
 }
 @media (max-width: 600px) {
   .feedback-prev {
@@ -780,6 +864,9 @@ section {
   .feedback-next {
     margin-right: 4rem;
     margin-top: -10rem;
+  }
+  .materials-offset {
+    font-size: 1.7rem;
   }
 }
 @media (max-width: 575px) {
@@ -805,6 +892,9 @@ section {
   .ps {
     margin-left: -30rem;
   }
+  .materials-offset {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 529px) {
   .feedback-form {
@@ -827,6 +917,9 @@ section {
     margin: -2rem 0 4rem 0;
     font-size: 2.3rem;
   }
+  .materials-header p {
+    font-size: 1.7rem;
+  }
 }
 @media (max-width: 477px) {
   .feedback label {
@@ -845,6 +938,9 @@ section {
   }
   .allinc-header p {
     font-size: 1.4rem;
+  }
+  .materials-header p {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 436px) {
@@ -909,6 +1005,12 @@ section {
 @media (max-width: 393px) {
   .request {
     margin-left: -0.6rem;
+  }
+  .materials-offset {
+    font-size: 1.3rem;
+  }
+  .materials-header p {
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 386px) {
