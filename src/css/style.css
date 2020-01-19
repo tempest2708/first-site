@@ -623,9 +623,7 @@ section {
 }
 /* Demonstration */
 .demonstration {
-  margin-top: -2rem;
-  margin-bottom: 5rem;
-  background: #ffffff url(../img/demonstration/demonstration-bg.jpg) center top -2rem no-repeat;
+  background: #ffffff url(../img/demonstration/demonstration-bg.jpg) center no-repeat;
 }
 .demonstration h1 {
   font-size: 4rem;
@@ -801,6 +799,18 @@ section {
   .demonstration {
     background-position: left  top ;
   }
+  .demonstration h1 {
+    font-size: 3.5rem;
+  }
+  .demonstration p {
+    font-size: 2rem;
+  }
+  .demonstration button {
+    font-size: 1.3rem;
+  }
+  .demonstration-form {
+    margin-top: -1rem;
+  }
 }
 @media (max-width: 767px) {
   .main {
@@ -853,7 +863,27 @@ section {
     height: 31rem;
   }
   .materials-offset {
+    font-size: 2.1rem;
+  }
+  .demonstration h1 {
     font-size: 2.5rem;
+    margin-top: -3rem;
+    line-height: 3.8rem;
+    margin-bottom: 2rem;
+  }
+  .demonstration p {
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+  .demonstration-form {
+    padding: 2.4rem;
+    height: 38rem;
+    width: 26rem;
+    margin-top: -2.5rem;
+  }
+  .demonstration-form label {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 600px) {
@@ -883,6 +913,31 @@ section {
   .popup-close {
     position: absolute;
     transform: translateX(-2rem);
+  }
+  .demonstration-header {
+    position: absolute;
+    top: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .demonstration-form {
+    margin: 0 auto;
+    width: 30rem;
+    height: 35.5rem;
+    padding: 2rem;
+    margin-top: 50%;
+  }
+  .demonstration h1 {
+    font-size: 2.5rem;
+    width: 30rem;
+  }
+  .demonstration p {
+    font-size: 1.5rem;
+    width: 30rem;
+  }
+  .demonstration button {
+    font-size: 1.7rem;
   }
 }
 @media (max-width: 531px) {
@@ -1026,6 +1081,9 @@ section {
   .popup .main-form-btn {
     font-size: 1.2rem;
     margin-left: -0.5rem;
+  }
+  .materials-offset {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 376px) {

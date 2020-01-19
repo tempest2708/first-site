@@ -62,7 +62,6 @@ button, a, input, textarea {
 
 section {
 	padding: 10rem 0;
-
 }
 
 /* main */
@@ -856,9 +855,8 @@ section {
 /* Demonstration */
 
 .demonstration {
-	margin-top: -2rem;
-	margin-bottom: 5rem;
-	background: #fff url(../img/demonstration/demonstration-bg.jpg) center top -2rem no-repeat;
+	
+	background: #fff url(../img/demonstration/demonstration-bg.jpg) center  no-repeat;
 	
 	h1 {
 		font-size: 4rem;
@@ -1125,7 +1123,22 @@ section {
 
 	.demonstration {
 		background-position: left  top ;
-		
+		h1 {
+			font-size: 3.5rem;
+		}
+
+		p {
+			font-size: 2rem;
+		}
+
+		button {
+			font-size: 1.3rem;
+		}
+
+		&-form {
+			margin-top: -1rem;
+		}
+
 	}
 
 
@@ -1219,8 +1232,34 @@ section {
 	.materials {
 
 		&-offset  {
-			font-size: 2.5rem;
+			font-size: 2.1rem;
 		}
+	}
+
+	.demonstration {
+		h1 {
+			font-size: 2.5rem;
+			margin-top: -3rem;
+			line-height: 3.8rem;
+			margin-bottom: 2rem;
+		}
+
+		p {
+			margin-bottom: 0;
+			font-size: 1.8rem;
+			margin-bottom: 3rem;
+		}
+		 &-form {
+		 	padding: 2.4rem;
+		 	height: 38rem;
+		 	width: 26rem;
+		 	margin-top: -2.5rem;
+
+		 	label {
+		 		font-size: 1.2rem;
+		 	}
+		 }
+
 	}
 }
 
@@ -1269,6 +1308,40 @@ section {
 		position: absolute;
 		transform: translateX(-2rem);
 		
+	}
+
+	.demonstration {
+		
+		&-header {
+			position: absolute;
+			top: -4rem;
+			left: 50%;
+			transform: translateX(-50%);
+			text-align: center;
+		}
+		&-form {
+			margin: 0 auto;
+			width: 30rem;
+			height: 35.5rem;
+			padding: 2rem;
+			margin-top: 50%;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+			width: 30rem;
+		}
+
+		p {
+			font-size: 1.5rem;
+			width: 30rem;
+			
+		}
+
+		button {
+			font-size: 1.7rem;
+
+		}
 	}
 }	
 
@@ -1526,6 +1599,11 @@ section {
 			margin-left: -0.5rem;
 		}
 	}
+
+	.materials-offset {
+		font-size: 1.5rem;
+	}
+
 }
 
 @media (max-width: 376px) {
