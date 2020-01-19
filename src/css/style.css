@@ -885,6 +885,9 @@ section {
   .demonstration-form label {
     font-size: 1.2rem;
   }
+  .demonstration button {
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 600px) {
   .feedback-prev {
@@ -914,30 +917,26 @@ section {
     position: absolute;
     transform: translateX(-2rem);
   }
+  .demonstration {
+    padding: 0;
+  }
   .demonstration-header {
-    position: absolute;
-    top: -4rem;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
+    margin-top: 4rem;
   }
   .demonstration-form {
     margin: 0 auto;
-    width: 30rem;
-    height: 35.5rem;
-    padding: 2rem;
-    margin-top: 50%;
+    margin-bottom: 2rem;
+    padding: 3rem;
   }
   .demonstration h1 {
     font-size: 2.5rem;
-    width: 30rem;
   }
   .demonstration p {
     font-size: 1.5rem;
-    width: 30rem;
   }
   .demonstration button {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 531px) {
@@ -1031,6 +1030,9 @@ section {
     position: absolute;
     transform: translate(-50%, 115%);
   }
+  .demonstration .main-form {
+    margin-bottom: 1rem;
+  }
 }
 @media (max-width: 412px) {
   .main-form-btn {
@@ -1055,6 +1057,12 @@ section {
   }
   .feedback .media span {
     margin-left: -12%;
+  }
+  .demonstration .main-form {
+    margin-bottom: 1rem;
+  }
+  .demonstration button {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 393px) {
@@ -1085,6 +1093,9 @@ section {
   .materials-offset {
     font-size: 1.5rem;
   }
+  .demonstration .main-form {
+    margin-top: -2rem;
+  }
 }
 @media (max-width: 376px) {
   .ps {
@@ -1107,5 +1118,8 @@ section {
   .main-content .ps {
     display: inline;
     margin-top: 200rem;
+  }
+  .demonstration button {
+    font-size: 1.1rem;
   }
 }

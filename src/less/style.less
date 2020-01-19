@@ -1260,6 +1260,10 @@ section {
 		 	}
 		 }
 
+		 button {
+		 	font-size: 1.2rem;
+		 }
+
 	}
 }
 
@@ -1286,6 +1290,8 @@ section {
 
 
 @media (max-width: 575px) {
+	
+
 	.main {
 
 		&-content {
@@ -1302,9 +1308,7 @@ section {
 		font-size: 0.5rem;
 		
 	}	
-
-
-	.popup-close {
+.popup-close {
 		position: absolute;
 		transform: translateX(-2rem);
 		
@@ -1312,34 +1316,29 @@ section {
 
 	.demonstration {
 		
+		padding : 0;
 		&-header {
-			position: absolute;
-			top: -4rem;
-			left: 50%;
-			transform: translateX(-50%);
 			text-align: center;
+			margin-top: 4rem;
 		}
+		
 		&-form {
 			margin: 0 auto;
-			width: 30rem;
-			height: 35.5rem;
-			padding: 2rem;
-			margin-top: 50%;
+			margin-bottom: 2rem;
+			padding: 3rem;
 		}
 
 		h1 {
 			font-size: 2.5rem;
-			width: 30rem;
+			
 		}
 
 		p {
 			font-size: 1.5rem;
-			width: 30rem;
-			
 		}
 
 		button {
-			font-size: 1.7rem;
+			font-size: 1.4rem;
 
 		}
 	}
@@ -1505,6 +1504,12 @@ section {
 			transform: translate(-50%,115%);
 		}
 	}
+
+	.demonstration {
+		.main-form {
+			margin-bottom: 1rem;
+		}
+	}
 	
 }
 
@@ -1550,6 +1555,16 @@ section {
 			span {
 				margin-left: -12%;
 			}
+		}
+	}
+
+	.demonstration {
+		.main-form {
+			margin-bottom: 1rem;
+		}
+
+		button {
+			font-size: 1.1rem;
 		}
 	}
 }
@@ -1604,6 +1619,12 @@ section {
 		font-size: 1.5rem;
 	}
 
+	.demonstration {
+		.main-form {
+			margin-top: -2rem
+		}
+	}
+
 }
 
 @media (max-width: 376px) {
@@ -1642,6 +1663,12 @@ section {
 		.ps {
 			display: inline;
 			margin-top: 200rem;
+		}
+	}
+
+	.demonstration {
+		button {
+			font-size: 1.1rem;
 		}
 	}
 
