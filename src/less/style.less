@@ -875,6 +875,46 @@ section {
 	}
 }
 
+/* Additionally */
+
+.additionally {
+	background: @icons-color url(../img/additionally/additionally_bg.jpg) 0 0 no-repeat;
+	background-size: cover;
+	text-align: center;
+
+	&-block {
+		
+		margin-bottom: 4rem;
+	}
+
+	&-header {
+		h2 {
+			font-size: 3.6rem;
+			line-height: 1.8rem;
+			.bold();
+			color: @light;
+		}
+
+		p {
+			font-size: 1.8rem;
+			line-height: 1.8rem;
+			color: @light;
+			margin: 6rem 0;
+		}
+	}
+
+	h3 {
+		font-size: 2rem;
+		line-height: 1.8rem;
+		color: @light;
+		margin: 3rem 0;
+	}
+
+	button {
+		font-size: 1.6rem;
+	}
+}
+
 /* Media */
 @media (max-width: 1200px) {
 
@@ -987,6 +1027,12 @@ section {
 		
 		small {
 			font-size: 1.1rem;
+		}
+	}
+
+	.additionally {
+		img {
+			max-width: 30rem;
 		}
 	}
 }
@@ -1484,6 +1530,14 @@ section {
 		}
 	}
 
+	.additionally {
+		&-header {
+			h2 {
+				font-size: 3.3rem;
+			}
+		}
+	}
+
 }
 
 
@@ -1565,6 +1619,14 @@ section {
 
 		button {
 			font-size: 1.1rem;
+		}
+	}
+
+	.additionally {
+		&-header {
+			h2 {
+				font-size: 3rem;
+			}
 		}
 	}
 }
@@ -1669,6 +1731,14 @@ section {
 	.demonstration {
 		button {
 			font-size: 1.1rem;
+		}
+	}
+
+	.additionally {
+		&-header {
+			h2 {
+				line-height: 3rem;
+			}
 		}
 	}
 
