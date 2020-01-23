@@ -310,6 +310,7 @@ section {
 .feedback {
   background: url(../img/feedback/feedback-bg.jpg) center no-repeat;
   background-size: cover;
+  box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.1);
 }
 .feedback .information p {
   font-size: 1.6rem;
@@ -624,6 +625,7 @@ section {
 /* Demonstration */
 .demonstration {
   background: #ffffff url(../img/demonstration/demonstration-bg.jpg) center no-repeat;
+  background-size: cover;
 }
 .demonstration h1 {
   font-size: 4rem;
@@ -667,6 +669,59 @@ section {
 }
 .additionally button {
   font-size: 1.6rem;
+}
+/* Contacts */
+.contacts {
+  background: #ffffff url(../img/contacts/contacts_bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.contacts h2 {
+  font-size: 3.6rem;
+  line-height: 5.8rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin-bottom: 5rem;
+}
+.contacts p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.contacts .map {
+  margin: 3rem 0;
+}
+.contacts-form h2 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-family: 'ProximaNova_reg', sans-serif;
+}
+.contacts-form button {
+  padding: 0;
+}
+/* Footer */
+footer {
+  margin: 4rem 0;
+  text-align: center;
+}
+footer a,
+footer p {
+  font-size: 1.7rem;
+  text-decoration: underline;
+  margin-top: -2rem;
+}
+footer .phone {
+  font-size: 2rem;
+  color: #1a1820;
+  font-family: 'ProximaNova_bold', sans-serif;
+  text-decoration: none;
+}
+footer .made {
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+footer .footer-logo {
+  text-align: left;
+}
+footer .footer-dev-logo {
+  text-align: right;
 }
 /* Media */
 @media (max-width: 1200px) {
@@ -844,6 +899,13 @@ section {
   .demonstration-form {
     margin-top: -1rem;
   }
+  .contacts {
+    background-position: left top;
+    text-align: center;
+  }
+  .footer-phone {
+    margin-left: 4rem;
+  }
 }
 @media (max-width: 767px) {
   .main {
@@ -921,6 +983,16 @@ section {
   .demonstration button {
     font-size: 1.2rem;
   }
+  footer .footer-logo,
+  footer .footer-dev-logo {
+    text-align: center;
+  }
+  footer .footer-phone {
+    margin: 4rem 0;
+  }
+  footer .footer-dev-logo img {
+    margin-right: 5rem;
+  }
 }
 @media (max-width: 600px) {
   .feedback-prev {
@@ -959,11 +1031,12 @@ section {
   }
   .demonstration-form {
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     padding: 3rem;
   }
   .demonstration h1 {
     font-size: 2.5rem;
+    margin-top: 5rem;
   }
   .demonstration p {
     font-size: 1.5rem;
@@ -1067,7 +1140,10 @@ section {
     transform: translate(-50%, 115%);
   }
   .demonstration .main-form {
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
+  }
+  .contacts-form button {
+    max-width: 100%;
   }
 }
 @media (max-width: 412px) {
@@ -1094,8 +1170,8 @@ section {
   .feedback .media span {
     margin-left: -12%;
   }
-  .demonstration .main-form {
-    margin-bottom: 1rem;
+  .demonstration {
+    background-size: cover;
   }
   .demonstration button {
     font-size: 1.1rem;

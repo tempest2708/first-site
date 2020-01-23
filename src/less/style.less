@@ -58,6 +58,7 @@ button, a, input, textarea {
 		outline: none;
 	}
 	resize: none;
+
 }
 
 section {
@@ -420,6 +421,7 @@ section {
 	
 	background: url(../img/feedback/feedback-bg.jpg) center no-repeat;
 	background-size: cover;
+	box-shadow: 6px 10px 18px 0px rgba(0,0,0,0.1);
 
 	.information {
 		p {
@@ -857,7 +859,7 @@ section {
 .demonstration {
 	
 	background: #fff url(../img/demonstration/demonstration-bg.jpg) center  no-repeat;
-	
+	background-size: cover;
 	h1 {
 		font-size: 4rem;
 		line-height: 5.8rem;
@@ -913,6 +915,78 @@ section {
 	button {
 		font-size: 1.6rem;
 	}
+}
+
+/* Contacts */
+.contacts {
+	
+	background: #fff url(../img/contacts/contacts_bg.jpg) center no-repeat;
+	background-size: cover;
+	
+	h2 {
+		font-size: 3.6rem;
+		line-height: 5.8rem;
+		.bold();
+		margin-bottom: 5rem;
+	}
+
+	p {
+		font-size: 1.8rem;
+		margin-bottom: 2rem;
+
+	}
+
+	.map {
+		margin: 3rem 0;
+	}
+
+	&-form {
+		h2 {
+			font-size: 1.8rem;
+			line-height: 2rem;
+			.reg();
+		}
+		
+		button {
+			padding: 0;
+		}
+
+	}
+}
+
+/* Footer */
+footer {
+	margin: 4rem 0;
+	text-align: center;
+	
+	a,p {
+		font-size: 1.7rem;
+		text-decoration: underline;
+		margin-top: -2rem;
+	}
+	.phone {
+		font-size: 2rem;
+		color : @text;
+		.bold();
+		text-decoration: none;
+
+	}
+
+	.made {
+		font-size: 1.1rem;
+		text-decoration: none;
+	}
+
+	.footer {
+		&-logo {
+			text-align: left;
+		}
+
+		&-dev-logo {
+			text-align: right;
+		}
+	}
+
 }
 
 /* Media */
@@ -1187,8 +1261,17 @@ section {
 
 	}
 
+	.contacts {
+		background-position: left top;
+		text-align: center;
+	}
 
+	.footer-phone {
+		margin-left: 4rem;
+	}
 }
+
+
 
 @media (max-width: 767px) {
 	.main {
@@ -1311,6 +1394,24 @@ section {
 		 }
 
 	}
+
+	footer {
+		.footer {
+			&-logo,&-dev-logo {
+				text-align: center;
+			}
+
+			&-phone {
+				margin: 4rem 0;
+			}
+
+			&-dev-logo {
+				img {
+					margin-right: 5rem;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 600px) {
@@ -1370,13 +1471,13 @@ section {
 		
 		&-form {
 			margin: 0 auto;
-			margin-bottom: 2rem;
+			margin-bottom: 5rem;
 			padding: 3rem;
 		}
 
 		h1 {
 			font-size: 2.5rem;
-			
+			margin-top: 5rem;
 		}
 
 		p {
@@ -1489,6 +1590,9 @@ section {
 			} 
 		}
 	}
+
+	
+	
 }
 
 @media (max-width: 436px) {
@@ -1561,10 +1665,18 @@ section {
 
 	.demonstration {
 		.main-form {
-			margin-bottom: 1rem;
+			margin-bottom: 5rem;
 		}
 	}
-	
+
+	.contacts {
+		&-form {
+			button {
+				max-width: 100%;
+				
+			}
+		}
+	}
 }
 
 
@@ -1613,16 +1725,15 @@ section {
 	}
 
 	.demonstration {
-		.main-form {
-			margin-bottom: 1rem;
-		}
-
+		background-size: cover;
+		
 		button {
 			font-size: 1.1rem;
 		}
 	}
 
 	.additionally {
+		
 		&-header {
 			h2 {
 				font-size: 3rem;
@@ -1651,6 +1762,8 @@ section {
 			} 
 		}
 	}
+
+	
 }
 
 
