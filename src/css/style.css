@@ -37,6 +37,7 @@ textarea:focus {
 }
 section {
   padding: 10rem 0;
+  height: calc(0%);
 }
 /* main */
 .main {
@@ -44,6 +45,7 @@ section {
   background: #ffffff url(../img/main-bg.jpeg) center center no-repeat;
   background-size: cover;
   padding: 3rem;
+  padding-bottom: 20rem;
 }
 .main-content {
   margin-top: 10rem;
