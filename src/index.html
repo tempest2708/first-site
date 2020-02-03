@@ -54,12 +54,12 @@
 
 										<div class="col-xl-4 offset-xl-3 col-lg-5 offset-lg-2 col-md-8 offset-md-2">
 											<div class="main-form wow fadeInRight">
-												<form action="#">
+												<form action="mail.php" method="POST">
 													<h2>Для расчёта точной стоимости <br> закажите <strong>выезд замерщика</strong></h2>
 													<label for="#">Ваше имя</label>
-													<input class="main-form-input" required type="text">
+													<input name="user_name" class="main-form-input" required type="text">
 													<label for="#">Номер телефона</label>
-													<input class="main-form-input" type="text" required>
+													<input name="user_phone" class="main-form-input" type="tel" required>
 													<button class="button main-form-btn request" type="submit">оставьте заявку</button>
 													<small>Приедем в день обращения* </small>
 												</form>
@@ -323,15 +323,16 @@
 										<div class="main-form">
 											<h2>Хотите так же? Оставьте Ваши контактные данные</h2>
 											
-											<form action="#">
+											<form action="mail.php" method="POST">
 												<div class="row">
 													<div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.8s">
 														<label class="name-label " for="#">Ваше имя</label>
-														<input class="main-form-input"  type="text" required>
+														<input class="main-form-input" name="user_name"  type="text" required>
 													</div>
 													<div class="col-xl-6 wow fadeInRight" data-wow-delay="0.8s">
-														<label class="phone-label" for="#">Номер телефона</label>
-														<input class="main-form-input "  type="text" required
+														<label class="phone-label"   for="#">Номер телефона</label>
+														<input class="main-form-input" name="user_phone"
+														 type="tel" required
 													</div>
 												</div>
 												
@@ -615,12 +616,12 @@
 								</div>
 								<div class="col-xl-4 offset-xl-3 col-lg-5 offset-lg-2 col-md-6 col-sm-6">
 									<div class="main-form demonstration-form wow fadeInRight">
-										<form action="#">
+										<form action="mail.php" method="POST">
 											<h2>Оставьте контактные данные <br>для связи</h2>
 											<label for="#">Ваше имя</label>
-											<input class="main-form-input" type="text" required>
+											<input class="main-form-input" name="user_name" type="text" required>
 											<label for="#">Номер телефона</label>
-											<input class="main-form-input" type="text" required>
+											<input class="main-form-input" name="user_phone" type="tel" required>
 											<button class="button main-form-btn request" type="submit">записаться на просмотр</button>
 											<small>Подберем ближайщий к вам объект </small>
 										</form>
@@ -646,29 +647,29 @@
 						<div class="row">
 							<div class="col-xl-4 col-lg-4">
 
-								<div class="additionally-block wow fadeInDown" data-wow-delay="1.2s">
+								<div class="additionally-block wow fadeInDown" data-wow-delay="1s">
 									<img src="img/additionally/1.jpg" alt="">
 										<h3>Монтаж электропроводки</h3>
-										<button class="button wow fadeInUp" data-wow-delay="1.6s">цены</button>
+										<button class="button wow fadeInUp" data-wow-delay="1.2s">цены</button>
 									</div>
 								</div>
 							
 								<div class="col-xl-4 col-lg-4">
 									
-									<div class="additionally-block wow fadeInDown" data-wow-delay="1.2s">
+									<div class="additionally-block wow fadeInDown" data-wow-delay="1s">
 										<img src="img/additionally/2.jpg" alt="">
 										<h3>Стяжка пола</h3>
-										<button class="button wow fadeInUp" data-wow-delay="1.6s">цены</button>
+										<button class="button wow fadeInUp" data-wow-delay="1.2s">цены</button>
 									</div>
 								</div>
 							
 					
 								<div class="col-xl-4 col-lg-4">
 									
-									<div class="additionally-block wow fadeInDown" data-wow-delay="1.2s">
+									<div class="additionally-block wow fadeInDown" data-wow-delay="1s">
 										<img src="img/additionally/3.jpg" alt="">
 										<h3>Сантехнические работы</h3>
-										<button class="button wow fadeInUp" data-wow-delay="1.6s">цены</button>
+										<button class="button wow fadeInUp" data-wow-delay="1.2s">цены</button>
 									</div>
 								</div>
 						</div>
@@ -692,16 +693,16 @@
 												</div>
 												<div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-3 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-10 offset-1">
 													<div class="main-form contacts-form wow flipInY">
-														<form action="#">
+														<form action="mail.php" method="POST">
 															<h2>Оставьте контактные данные <br>для связи</h2>
 															<label for="#">Ваше имя</label>
-															<input class="main-form-input" type="text" required>
+															<input class="main-form-input" name="user_name" type="text" required>
 															<label for="#">Номер телефона</label>
-															<input class="main-form-input" type="text" required>
+															<input class="main-form-input" name="user_phone" type="tel" required>
 															<label for="#">E-mail</label>
-															<input class="main-form-input" type="text" required>
+															<input class="main-form-input" name="emailaddress" type="email"  required>
 															<label for="#">Сообщение</label>
-															<textarea class="main-form-input" rows="5" required></textarea>
+															<textarea class="main-form-input" name="text" rows="5" required></textarea>
 															<button class="button main-form-btn request" type="submit">записаться на просмотр</button>
 															
 														</form>
