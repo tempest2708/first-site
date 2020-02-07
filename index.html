@@ -748,14 +748,14 @@
 							<div class="main-form ">
 								<h3>Заинтересовало?</h3>
 								<p>Оставьте контактные данные <br>для связи</p>
-								<form action="#">
+								<form action="mail.php" method="POST">
 
 									<label for="#">Ваше имя</label>
-									<input class="main-form-input" type="text" required>
+									<input class="main-form-input" name="user_name" type="text" required>
 									<label for="#">Номер телефона</label>
-									<input class="main-form-input" type="text" required>
+									<input class="main-form-input" name="user_phone" type="tel" required>
 									<label for="#">Сообщение</label>
-									<textarea cols="30" rows="5" class="main-form-input" required></textarea>
+									<textarea cols="30" rows="5" name="text" class="main-form-input" required></textarea>
 									<button class="button main-form-btn" type="submit">оставьте заявку</button>
 									
 
