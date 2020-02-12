@@ -47,6 +47,12 @@ body {
 	
 }
 
+iframe {
+	width: 100% !important;
+	height: 30rem;
+	border: none;
+}
+
 html {
 	font-size: 10px;
 	width: 100%;
@@ -421,11 +427,11 @@ section {
 
 /* Feedback */
 .feedback {
-	
+	position: relative;
 	background: url(../img/feedback/feedback-bg.jpg) center no-repeat;
 	background-size: cover;
 	box-shadow: 6px 10px 18px 0px rgba(0,0,0,0.1);
-
+	
 	.information {
 		p {
 			font-size: 1.6rem;
@@ -518,8 +524,8 @@ section {
 			position: absolute;
 			z-index:99;
 			bottom: 0;
-			right: 90%;
-			top: 57%;
+			right: 64%;
+			top: 77%;
 			width: 35rem;
 
 		}
@@ -641,7 +647,7 @@ section {
 	background-size: cover;
 	
 	&-header {
-		h1 {
+		h2 {
 			font-size: 4.8rem;
 			line-height: 1.8rem;
 			.bold();
@@ -710,7 +716,7 @@ section {
 .problems {
 	
 	&-header {
-		h1 {
+		h2 {
 			font-size: 3.6rem;
 			line-height: 1.8rem;
 			.bold();
@@ -863,11 +869,17 @@ section {
 	
 	background: #fff url(../img/demonstration/demonstration-bg.jpg) center  no-repeat;
 	background-size: cover;
-	h1 {
+	
+	h2 {
 		font-size: 4rem;
 		line-height: 5.8rem;
 		.bold();
 		text-transform: uppercase;
+	}
+
+	h3 {
+		font-size: 1.8rem;
+		margin-bottom: 3rem;
 	}
 
 	p {
@@ -1046,7 +1058,8 @@ footer {
 	}			
 	
 	.hand {
-		margin-top: 4.8rem;
+		margin-top: 16rem;
+		margin-right: 5rem;
 	}
 	
 	
@@ -1095,6 +1108,10 @@ footer {
 	.demonstration {
 		h2 {
 			font-size: 1.4rem;
+		}
+
+		h3 {
+			font-size: 1.8rem;
 		}
 
 		button {
@@ -1246,7 +1263,7 @@ footer {
 
 	.demonstration {
 		background-position: left  top ;
-		h1 {
+		h2 {
 			font-size: 3.5rem;
 		}
 
@@ -1369,7 +1386,7 @@ footer {
 	}
 
 	.demonstration {
-		h1 {
+		h2 {
 			font-size: 2.5rem;
 			margin-top: -3rem;
 			line-height: 3.8rem;
@@ -1478,7 +1495,7 @@ footer {
 			padding: 3rem;
 		}
 
-		h1 {
+		h2 {
 			font-size: 2.5rem;
 			margin-top: 5rem;
 		}
@@ -1539,7 +1556,7 @@ footer {
 
 	.problems {
 		&-header {
-			h1 {
+			h2 {
 				margin:  -2rem 0  4rem 0;
 				font-size: 2.3rem;
 			}
@@ -1576,7 +1593,7 @@ footer {
 
 	.allinc {
 		&-header {
-			h1 {
+			h2 {
 				font-size: 3rem;
 			}
 
@@ -1621,7 +1638,7 @@ footer {
 
 		.allinc {
 			&-header {
-				h1 {
+				h2 {
 					font-size: 2.8rem;
 				}
 

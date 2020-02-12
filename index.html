@@ -4,18 +4,14 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="icon" href="img/favicon.ico">
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		 <link rel="stylesheet" href="css/hover-min.css">
-		 <link rel="stylesheet" href="css/animate.css">
-		<title>Автоматизированная  штукатурка стенd</title>
-		
+		<title>Автоматизированная  штукатурка стен</title>
 	</head>
+		
 
 	<body>
 		<main class="main">
 			<div class="container">
-				<div class="header">
+				<div class="header" >
 					<div class="row">
 						
 							
@@ -56,10 +52,10 @@
 											<div class="main-form wow fadeInRight">
 												<form action="mail.php" method="POST">
 													<h2>Для расчёта точной стоимости <br> закажите <strong>выезд замерщика</strong></h2>
-													<label for="#">Ваше имя</label>
-													<input name="user_name" class="main-form-input" required type="text">
-													<label for="#">Номер телефона</label>
-													<input name="user_phone" class="main-form-input" type="tel" required>
+													<label for="input-name-1">Ваше имя</label>
+													<input name="user_name" class="main-form-input" id="input-name-1" required type="text">
+													<label for="phone-1">Номер телефона</label>
+													<input name="user_phone" class="main-form-input" id="phone-1" type="tel" required>
 													<button class="button main-form-btn request" type="submit">оставьте заявку</button>
 													<small>Приедем в день обращения* </small>
 												</form>
@@ -98,7 +94,7 @@
 						<div class="features-block wow fadeInDown" data-wow-delay="0.5s">
 							<div class="features-img">
 								<picture>
-									<source srcset="img/features/folder type="image/>
+									<source srcset="img/features/folder" type="image/">
 									<img src="img/features/folder.png" alt="folder">
 								</picture>
 							</div>
@@ -199,6 +195,7 @@
 				</section>
 				
 				<section class="feedback">
+					
 					
 					<div class="container">
 						<div class="section-header">
@@ -326,28 +323,24 @@
 											<form action="mail.php" method="POST">
 												<div class="row">
 													<div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.8s">
-														<label class="name-label " for="#">Ваше имя</label>
-														<input class="main-form-input" name="user_name"  type="text" required>
+														<label for="name-2" class="name-label " >Ваше имя</label>
+														<input class="main-form-input" name="user_name" id="name-2" type="text" required>
 													</div>
 													<div class="col-xl-6 wow fadeInRight" data-wow-delay="0.8s">
-														<label class="phone-label"   for="#">Номер телефона</label>
-														<input class="main-form-input" name="user_phone"
-														 type="tel" required
+														<label class="phone-label"   for="phone-2">Номер телефона</label>
+														<input class="main-form-input" name="user_phone" id="phone-2"
+														 type="tel" required>
 													</div>
 												</div>
 												
 											</form>
 												<button class="button main-form-btn feedback-form-btn wow flipInX" data-wow-delay="0.8s" type="submit">оставьте заявку</button>
 												
-												
-												
-
-
 										</div>
-								</div>
+									</div>
 
 							</div>
-					<img class="hand wow fadeInLeft" src="img/feedback/hand.png" alt="hand">			
+							<img class="hand wow fadeInLeft" data-wow-delay="0.8s" src="img/feedback/hand.png" alt="hand">
 				</section>
 				
 				<section class="scheme">
@@ -394,7 +387,7 @@
 					<div class="container">
 						
 						<div class="allinc-header">
-							<h1 class="wow flipInY">Все на 100% включено!</h1>
+							<h2 class="wow flipInY">Все на 100% включено!</h2>
 							<p class="wow flipInX">При выполнении работ с нашим материалом в стоимость входит:</p>
 						</div>
 						<div class="row wow fadeInDown">
@@ -498,7 +491,7 @@
 				<section class="problems">
 					<div class="container">
 						<div class="problems-header wow fadeInDown" data-wow-delay="0.8s">
-							<h1>Мы развеем все опасения</h1>
+							<h2>Мы развеем все опасения</h2>
 						</div>
 						<div class="row">
 							<div class="col-xl-5 col-lg-5">
@@ -608,7 +601,7 @@
 								
 								<div class="col-xl-5 col-lg-5 col-md-6 col-sm-6">
 									<div class="demonstration-header wow fadeInLeft ">
-										<h1>Посмотрите как мы работаем</h1>
+										<h2>Посмотрите как мы работаем</h2>
 										<p>Хотите удостовериться в профессионализме наших сотрудников? </p>
 										<p>Вы можете сделать это, приехав на один из наших объектов, и понаблюдав за ходом работ. Увидите оборудование, материалы и качество исполнения.</p>
 									</div>
@@ -617,11 +610,11 @@
 								<div class="col-xl-4 offset-xl-3 col-lg-5 offset-lg-2 col-md-6 col-sm-6">
 									<div class="main-form demonstration-form wow fadeInRight">
 										<form action="mail.php" method="POST">
-											<h2>Оставьте контактные данные <br>для связи</h2>
-											<label for="#">Ваше имя</label>
-											<input class="main-form-input" name="user_name" type="text" required>
-											<label for="#">Номер телефона</label>
-											<input class="main-form-input" name="user_phone" type="tel" required>
+											<h3>Оставьте контактные данные <br>для связи</h3>
+											<label for="name-3">Ваше имя</label>
+											<input class="main-form-input" name="user_name" type="text" id="name-3" required>
+											<label for="phone-3">Номер телефона</label>
+											<input class="main-form-input" name="user_phone" type="tel" id="phone-3" required>
 											<button class="button main-form-btn request" type="submit">записаться на просмотр</button>
 											<small>Подберем ближайщий к вам объект </small>
 										</form>
@@ -684,7 +677,7 @@
 													<h2>Контакты</h2>
 													<p>Адрес офиса: <br>Москва, копейское шоссе, 12, офис 34</p>
 													<div class="map">
-														<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.7638984495!2d36.82513038949304!3d55.5807480820225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1579799031347!5m2!1sru!2sru" width="100%" height="300" frameborder="" style="border:0;" allowfullscreen=""></iframe>
+														<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d577336.7638984495!2d36.82513038949304!3d55.5807480820225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1579799031347!5m2!1sru!2sru"  allowfullscreen=""></iframe>
 													</div>
 													<p>Номер телефона: <br><strong>+7 495 771 05 08</strong></p>
 													<p>E-mail: <br> <a href="mailto:order@gipsolit.ru">order@gipsolit.ru</a></p>
@@ -695,14 +688,14 @@
 													<div class="main-form contacts-form wow flipInY">
 														<form action="mail.php" method="POST">
 															<h2>Оставьте контактные данные <br>для связи</h2>
-															<label for="#">Ваше имя</label>
-															<input class="main-form-input" name="user_name" type="text" required>
-															<label for="#">Номер телефона</label>
-															<input class="main-form-input" name="user_phone" type="tel" required>
-															<label for="#">E-mail</label>
-															<input class="main-form-input" name="emailaddress" type="email"  required>
-															<label for="#">Сообщение</label>
-															<textarea class="main-form-input" name="text" rows="5" required></textarea>
+															<label for="name-4">Ваше имя</label>
+															<input class="main-form-input" id="name-4" name="user_name" type="text" required>
+															<label for="phone-4">Номер телефона</label>
+															<input class="main-form-input" id="phone-4" name="user_phone" type="tel" required>
+															<label for="email">E-mail</label>
+															<input class="main-form-input" id="email" name="emailaddress" type="email"  required>
+															<label for="message">Сообщение</label>
+															<textarea class="main-form-input" id="message" name="text" rows="5" required></textarea>
 															<button class="button main-form-btn request" type="submit">записаться на просмотр</button>
 															
 														</form>
@@ -750,12 +743,12 @@
 								<p>Оставьте контактные данные <br>для связи</p>
 								<form action="mail.php" method="POST">
 
-									<label for="#">Ваше имя</label>
-									<input class="main-form-input" name="user_name" type="text" required>
-									<label for="#">Номер телефона</label>
-									<input class="main-form-input" name="user_phone" type="tel" required>
-									<label for="#">Сообщение</label>
-									<textarea cols="30" rows="5" name="text" class="main-form-input" required></textarea>
+									<label for="popup-name">Ваше имя</label>
+									<input class="main-form-input" id="popup-name" name="user_name" type="text" required>
+									<label for="popup-phone">Номер телефона</label>
+									<input class="main-form-input" id="popup-phone" name="user_phone" type="tel" required>
+									<label for="popup-message">Сообщение</label>
+									<textarea cols="30" rows="5" id="popup-message" name="text" class="main-form-input" required></textarea>
 									<button class="button main-form-btn" type="submit">оставьте заявку</button>
 									
 
@@ -771,7 +764,11 @@
 		</div>
 			
 
-
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		 <link rel="stylesheet" href="css/hover-min.css">
+		 <link rel="stylesheet" href="css/animate.css">	
+		 
 		<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 		<script src="js/wow.min.js"></script>
 		<script>

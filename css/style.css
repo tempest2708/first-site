@@ -18,6 +18,11 @@
 body {
   font-family: 'ProximaNova_reg', sans-serif;
 }
+iframe {
+  width: 100% !important;
+  height: 30rem;
+  border: none;
+}
 html {
   font-size: 10px;
   width: 100%;
@@ -310,6 +315,7 @@ section {
 }
 /* Feedback */
 .feedback {
+  position: relative;
   background: url(../img/feedback/feedback-bg.jpg) center no-repeat;
   background-size: cover;
   box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.1);
@@ -382,8 +388,8 @@ section {
   position: absolute;
   z-index: 99;
   bottom: 0;
-  right: 90%;
-  top: 57%;
+  right: 64%;
+  top: 77%;
   width: 35rem;
 }
 .blockquote {
@@ -468,7 +474,7 @@ section {
   background: url(../img/allinc/allinc.jpg) center no-repeat;
   background-size: cover;
 }
-.allinc-header h1 {
+.allinc-header h2 {
   font-size: 4.8rem;
   line-height: 1.8rem;
   font-family: 'ProximaNova_bold', sans-serif;
@@ -518,7 +524,7 @@ section {
   margin-right: 1.5rem;
 }
 /* Problems */
-.problems-header h1 {
+.problems-header h2 {
   font-size: 3.6rem;
   line-height: 1.8rem;
   font-family: 'ProximaNova_bold', sans-serif;
@@ -629,11 +635,15 @@ section {
   background: #ffffff url(../img/demonstration/demonstration-bg.jpg) center no-repeat;
   background-size: cover;
 }
-.demonstration h1 {
+.demonstration h2 {
   font-size: 4rem;
   line-height: 5.8rem;
   font-family: 'ProximaNova_bold', sans-serif;
   text-transform: uppercase;
+}
+.demonstration h3 {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
 }
 .demonstration p {
   font-size: 2.3rem;
@@ -757,7 +767,8 @@ footer .footer-dev-logo {
     padding: 0;
   }
   .hand {
-    margin-top: 4.8rem;
+    margin-top: 16rem;
+    margin-right: 5rem;
   }
   .information {
     margin-top: 3rem;
@@ -790,6 +801,9 @@ footer .footer-dev-logo {
   }
   .demonstration h2 {
     font-size: 1.4rem;
+  }
+  .demonstration h3 {
+    font-size: 1.8rem;
   }
   .demonstration button {
     width: 100%;
@@ -889,7 +903,7 @@ footer .footer-dev-logo {
   .demonstration {
     background-position: left  top ;
   }
-  .demonstration h1 {
+  .demonstration h2 {
     font-size: 3.5rem;
   }
   .demonstration p {
@@ -962,7 +976,7 @@ footer .footer-dev-logo {
   .materials-offset {
     font-size: 2.1rem;
   }
-  .demonstration h1 {
+  .demonstration h2 {
     font-size: 2.5rem;
     margin-top: -3rem;
     line-height: 3.8rem;
@@ -1036,7 +1050,7 @@ footer .footer-dev-logo {
     margin-bottom: 5rem;
     padding: 3rem;
   }
-  .demonstration h1 {
+  .demonstration h2 {
     font-size: 2.5rem;
     margin-top: 5rem;
   }
@@ -1075,7 +1089,7 @@ footer .footer-dev-logo {
     position: absolute;
     transform: translate(-50%, 115%);
   }
-  .problems-header h1 {
+  .problems-header h2 {
     margin: -2rem 0 4rem 0;
     font-size: 2.3rem;
   }
@@ -1095,7 +1109,7 @@ footer .footer-dev-logo {
     position: absolute;
     transform: translate(-50%, 135%);
   }
-  .allinc-header h1 {
+  .allinc-header h2 {
     font-size: 3rem;
   }
   .allinc-header p {
@@ -1116,7 +1130,7 @@ footer .footer-dev-logo {
   .feedback-next {
     margin-top: -17rem;
   }
-  .allinc-header h1 {
+  .allinc-header h2 {
     font-size: 2.8rem;
   }
   .allinc-header p {
