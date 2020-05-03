@@ -459,7 +459,7 @@ section {
 	}
 
 	&-slider {
-
+		box-shadow: 0 3px 10px rgba(0,0,0,0.5); 
 		&-btn {
 			position:absolute;
 			top: 50%;
@@ -1129,6 +1129,8 @@ footer {
 			max-width: 30rem;
 		}
 	}
+
+
 }
 
 @media (max-width: 1010px) {
@@ -1358,8 +1360,9 @@ footer {
 
 	.allinc {
 		&-header {
-			h1 {
-				font-size: 4rem;
+			h2 {
+				font-size: 6rem;
+				line-height: 4rem;
 			}
 		}
 		
@@ -1455,6 +1458,14 @@ footer {
 	}
 }
 
+@media (min-width: 413px) and (max-width: 575px) {
+ 
+ 	.button.main-form-btn.request   {
+ 		font-size: 1.3rem;
+ 		padding: 0; 	}
+}
+ 
+
 
 @media (max-width: 575px) {
 	
@@ -1506,6 +1517,7 @@ footer {
 
 		button {
 			font-size: 1.4rem;
+
 
 		}
 	}
@@ -1710,6 +1722,9 @@ footer {
 		}
 	}
 
+			
+	
+
 	.popup {
 		&-content {
 			width: 70%;
@@ -1726,13 +1741,15 @@ footer {
 				font-size: 1.6rem;
 			}
 
-
+			button {
+				margin-left: -1.14rem;
+			}
 		}
 		
 		&-close {
 			
 			position: absolute;
-			left: 107%;
+			left: 113%;
 		}
 	}
 

@@ -337,6 +337,9 @@ section {
   right: -6rem;
   z-index: 99;
 }
+.feedback-slider {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
 .feedback-slider-btn {
   position: absolute;
   top: 50%;
@@ -961,8 +964,9 @@ footer .footer-dev-logo {
   .scheme-slider {
     margin: 0;
   }
-  .allinc-header h1 {
-    font-size: 4rem;
+  .allinc-header h2 {
+    font-size: 6rem;
+    line-height: 4rem;
   }
   .problems .girl {
     display: none;
@@ -1021,6 +1025,12 @@ footer .footer-dev-logo {
   }
   .materials-offset {
     font-size: 1.7rem;
+  }
+}
+@media (min-width: 413px) and (max-width: 575px) {
+  .button.main-form-btn.request {
+    font-size: 1.3rem;
+    padding: 0;
   }
 }
 @media (max-width: 575px) {
@@ -1179,9 +1189,12 @@ footer .footer-dev-logo {
   .popup-content p {
     font-size: 1.6rem;
   }
+  .popup-content button {
+    margin-left: -1.14rem;
+  }
   .popup-close {
     position: absolute;
-    left: 107%;
+    left: 113%;
   }
   .feedback .media span {
     margin-left: -12%;
